@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+        .nav{
+            position: fixed;
+            font-family: cursive;
+            mix-blend-mode: difference;
+            z-index:102;
+            max-height: 12vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+        }
+        #part1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            width: 5vw;
+        }
+        #part1 #img{
+            width: 100%;
+            height: 100%;
+        }
+        #part1 #img{
+            cursor: pointer;
+        }
+        #part2{
+            display: flex;
+            gap: 2vw;
+        }
+        #part2 a{
+            text-decoration: none;
+            color: white;
+            border: solid transparent 1px;
+            border-radius: 20px;
+            transition: all 0.4s;
+        }
+        #part2 a:hover{
+            cursor: pointer;
+            background-color: grey;
+            border: none;
+        }
+        #part3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            width: 5vw;
+        }
+        #part3 #circle{
+            position: relative;
+            width: 35%;
+            height: 35%;
+            border: solid white 2px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+        #part3 #circle #overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            left: -100%;
+            transition: all 0.5s;
+        }
+        #part3 #circle:hover #overlay{
+            cursor: pointer;
+            left: 0;
+        }
+        #part3 #circle:hover{
+            border: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'domain';
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            overflow: hidden;
+        }
+        .container .text{
+            white-space: nowrap;
+        }
+        .container .text h1{
+            display: inline-block;
+            font-size: 10vw;
+            padding-left: 2vw;
+            font-weight: 100;
+            animation: slide 7s linear 0ms infinite ;
+        }
+        @keyframes slide {
+            from{
+                transform: translateX(-100%);
+            }
+            to{
+                transform: translateX(100%);
+            }
+        }
+        .text:hover h1{
+            cursor: pointer;
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="nav">
+        <div id="part1">
+            <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBe4OxBUtB1WE8qmuJ23_THJAMu4_1ojXoXA&s" alt="">
+        </div>
+        <div id="part2">
+            <a href="index.html">HOME</a>
+            <a href="work.html">WORK</a>
+            <a href="studio.html">STUDIO</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div id="part3">
+             <div id="circle">
+                <div id="overlay"></div>
+             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text">
+            <h1>STUDIO</h1>
+            <h1>STUDIO</h1>
+            <h1>STUDIO</h1>
+            <h1>STUDIO</h1>
+            <h1>STUDIO</h1>
+            <h1>STUDIO</h1>
+            <h1>STUDIO</h1>
+        </div>
+    </div>    
+</body>
+</html>

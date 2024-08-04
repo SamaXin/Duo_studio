@@ -1,0 +1,45 @@
+@import url('style.css');
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.page4 {
+    color: violet;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 300px;
+    border-bottom: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page4 img{
+    position: absolute;
+    width: 20vw;
+    height: 30vh;
+}
+.page4 img:nth-child(1){
+    left:15%;
+    top: 50%;
+}
+.page4 img:nth-child(3) {
+    left: 65%;
+    top: 50%;
+}
+.page4 .text{
+    font-family: 'mori';
+    height: 15.5vh;
+    width: 30vw;
+    background-color: aqua;
+}
+.page4 .text h1{
+    font-family: 'mori';
+    font-size: 7vw;
+}
+

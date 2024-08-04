@@ -1,0 +1,135 @@
+
+@font-face {
+    font-family: canopee;
+    src: url('../FONTS/canopee.ttf');
+}
+@font-face {
+    font-family: editorial;
+    src: url('../FONTS/editorial.ttf');
+}
+@font-face {
+    font-family: domain;
+    src: url('../FONTS/domain.ttf');
+}
+@font-face {
+    font-family: newlight;
+    src: url('../FONTS/newlight.ttf');
+}
+@font-face {
+    font-family: mori;
+    src: url('../FONTS/ppmori.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.main{
+    background-color: black;
+}
+.page1{
+    width:100%;
+    min-height: 100vh;
+    font-family: cursive;
+}
+.nav{
+    position: fixed;
+    font-family: cursive;
+    mix-blend-mode: difference;
+    z-index:102;
+    max-height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+#part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 5vw;
+}
+#part1 #img{
+    width: 100%;
+    height: 100%;
+}
+#part1 #img{
+    cursor: pointer;
+}
+#part2{
+    display: flex;
+    gap: 2vw;
+}
+#part2 a{
+    text-decoration: none;
+    color: white;
+    border: solid transparent 1px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+#part2 a:hover{
+    cursor: pointer;
+    background-color: grey;
+    border: none;
+}
+#part3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 5vw;
+}
+#part3 #circle{
+    position: relative;
+    width: 35%;
+    height: 35%;
+    border: solid white 2px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+#part3 #circle #overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    left: -100%;
+    transition: all 0.5s;
+}
+#part3 #circle:hover #overlay{
+    cursor: pointer;
+    left: 0;
+}
+#part3 #circle:hover{
+    border: none;
+}
+
+.page1 h1,h2{
+    color: white;
+    font-size: 8vw;
+    font-family: 'mori';
+    font-weight: 100;
+}
+.page1 #text1{
+    margin-top: 4%;
+    margin-left: 10%;
+    padding-top: 5vh;
+}
+.page1 #text2{
+    margin-left: 20%;
+}
+.page1 #video-tag{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    margin-top: 2%;
+}
+#video-tag video{
+    width: 30%;
+    height: 100%;
+}
